@@ -12,7 +12,6 @@ Buildrequires: perl-devel
 Buildrequires: perl-Module-Build
 Buildrequires: perl-libwww-perl
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module performs an HTTP request exactly the same as LWP does
