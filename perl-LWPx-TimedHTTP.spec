@@ -1,13 +1,14 @@
 %define real_name LWPx-TimedHTTP
+%define upstream_version 1.8
 
 Summary:	LWPx::TimedHTTP - time the different stages of an HTTP request 
 Name:		perl-%{real_name}
-Version:	1.5
-Release:	6
+Version:	%perl_convert_version %{upstream_version}
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SI/SIMONW/%{real_name}-%{version}.tar.bz2
+Source0:	http://www.cpan.org/authors/id/S/SI/SIMONW/LWPx-TimedHTTP-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTTP::Daemon)
 BuildRequires:	perl(Module::Build)
@@ -21,7 +22,7 @@ request and then inserts the results as header. It's useful for
 debugging where abouts in a connection slow downs are occuring.
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{real_name}-%{upstream_version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -82,4 +83,5 @@ install -m0644 blib/libdoc/LWPx::TimedHTTP.3pm %{buildroot}%{_mandir}/man3/
 
 * Thu Jul 14 2005 Oden Eriksson <oeriksson@mandriva.com> 1.4-1mdk
 - initial Mandriva package
+
 
