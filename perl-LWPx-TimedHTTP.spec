@@ -4,7 +4,7 @@
 Summary:	LWPx::TimedHTTP - time the different stages of an HTTP request 
 Name:		perl-%{real_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
