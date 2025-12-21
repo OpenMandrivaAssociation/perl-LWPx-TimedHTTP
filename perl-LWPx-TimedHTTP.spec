@@ -9,6 +9,7 @@ License:	GPL or Artistic
 Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{real_name}
 Source0:	http://www.cpan.org/authors/id/S/SI/SIMONW/LWPx-TimedHTTP-%{upstream_version}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTTP::Daemon)
 BuildRequires:	perl(Module::Build)
