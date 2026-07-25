@@ -3,12 +3,12 @@
 
 Summary:	LWPx::TimedHTTP - time the different stages of an HTTP request 
 Name:		perl-%{real_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{real_name}
-Source0:	http://www.cpan.org/authors/id/S/SI/SIMONW/LWPx-TimedHTTP-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/LWPx-TimedHTTP
+Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIMONW/LWPx-TimedHTTP-%{upstream_version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTTP::Daemon)
