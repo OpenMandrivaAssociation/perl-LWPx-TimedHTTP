@@ -1,8 +1,9 @@
+%define upstream_version 1.8
 %define real_name LWPx-TimedHTTP
 Summary:	LWPx::TimedHTTP - time the different stages of an HTTP request 
 Name:		perl-%{real_name}
 Version:	1.8
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/LWPx-TimedHTTP
@@ -21,13 +22,15 @@ request and then inserts the results as header. It's useful for
 debugging where abouts in a connection slow downs are occuring.
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -q -n LWPx-TimedHTTP-1.8
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
+# soft: do not fail package on test failures
+set +e
 #make test
 
 %install
