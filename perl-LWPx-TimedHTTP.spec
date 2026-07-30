@@ -3,7 +3,7 @@
 Summary:	LWPx::TimedHTTP - time the different stages of an HTTP request 
 Name:		perl-%{real_name}
 Version:	1.8
-Release:	2
+Release:	3
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/LWPx-TimedHTTP
